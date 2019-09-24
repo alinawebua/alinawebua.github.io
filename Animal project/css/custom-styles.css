@@ -1,0 +1,525 @@
+@font-face {
+    font-family: 'Georgia';
+    src: url("../source/fonts/Georgia.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Arial';
+    src: url("../source/fonts/Arial.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    font-family: 'Georgia', sans-serif;
+    box-sizing: border-box;
+    line-height: 1.7;
+}
+
+.wrapper {
+    display: block;
+    background: #fafafa;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding-bottom: 360px;
+}
+
+.wrapper-inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+.wrapper-inner:after {
+    content:  '';
+    display: block;
+    clear: both;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 45px;
+}
+
+
+/*************************** header *************************************/
+
+header {
+   background: url("../source/images/dog_logo.jpg") no-repeat center;
+   width: 100%;
+   height: 924px;
+   background-size: cover;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0;
+}
+
+.logo {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 35px;
+    color: #f1cdb3;
+}
+
+.logo p {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+
+.header-top nav {
+   margin-right: 5%;
+}
+
+.header-top nav ul li {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.header-top nav ul li a {
+    color: #fff;
+    padding: 0 18px;
+    text-decoration: none;
+}
+
+.header-top nav ul li a:hover {
+    text-decoration: underline;
+    color: #f1cdb3;
+}
+
+.header-bottom {
+    width: 35%;
+    padding: 13% 10px;
+}
+
+.header-bottom h1 {
+    font-size: 44px;
+    color: #fff;
+    word-spacing: 12px;
+    line-height: 60px;
+}
+
+.header-bottom p {
+    font-family: "Arial";
+    padding: 20px 0;
+    color: #cdcdcd;
+}
+
+.header-bottom button {
+    display: block;
+    background: #f1cdb3;
+    color: #292929;
+    width: 205px;
+    height: 52px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 20px 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.about_the_shelter .wrapper-inner {
+    padding: 5% 10%;
+}
+
+.about_the_shelter img {
+    display: inline-block;
+}
+
+.the_shelter {
+    display: inline-block;
+    float: right;
+    width: 50%;
+} 
+
+.the_shelter h2 {
+    color: #545454;
+    margin: 30px 0;
+    width: 80%;
+}
+
+.the_shelter p {
+    font-family: "Arial";
+    width: 90%;
+}
+
+.our_friends {
+    background: #f6f6f6;
+    padding: 3% 0;
+}
+
+.our_friends h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    width: 30%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.slide{
+    text-align: center;
+}
+
+.slide li {
+    display: inline-block;
+    text-align: center;
+    background: #fafafa;
+    margin: 0 25px;
+    padding: 35px 40px;
+    border-radius: 10px;
+}
+
+.slide li:hover {
+    box-shadow: 0 0 20px rgba(100,100,100,0.1);
+}
+
+.slide li button {
+    background: #fafafa;
+    border: 4px solid #f1cdb3;
+    width: 190px;
+    height: 55px;
+    margin: auto;
+    letter-spacing: 1px;
+}
+
+.slide li:hover button {
+    background: #f1cdb3;
+}
+
+.slide p {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #545454;
+    letter-spacing: 2px;
+}
+
+.our_friends button {
+    display: block;
+    background: #f1cdb3;
+    color: #292929;
+    width: 270px;
+    height: 52px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 70px auto 0 auto;
+    font-size: 17px;
+    letter-spacing: 1px;
+}
+
+.help_our_shelter {
+    background: #fafafa;
+}
+
+.help_our_shelter h2 {
+    text-align: center;
+    width: 25%;
+    margin: 0 auto;
+    padding: 3% 0 1%;
+}
+
+.help_our_shelter ul {
+    text-align: center;
+}
+
+.help_our_shelter ul li {
+    display: inline-block;
+    margin: 4% 5%;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.help_our_shelter ul li:before {
+    content: "";
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 70px;
+    height: 70px;
+    background: url("../source/images/sprite.png") no-repeat;    
+}
+
+.help_our_shelter ul li:nth-child(2):before {
+    background-position: -70px 0;  
+}
+
+.help_our_shelter ul li:nth-child(3):before {
+    background-position: -140px 0;  
+}
+
+.help_our_shelter ul li:nth-child(4):before {
+    background-position:-210px 0;   
+}
+
+.help_our_shelter ul li:nth-child(5):before {
+    background-position: -280px 0;  
+}
+
+.help_our_shelter ul li:nth-child(6):before {
+    background-position: -350px 0;  
+}
+
+.help_our_shelter ul li:nth-child(7):before {
+    background-position:-420px 0;   
+}
+
+.help_our_shelter ul li:nth-child(8):before {
+    background-position: -490px 0;  
+}
+
+.make_a_donation {
+    background: #f6f6f6;
+    padding: 3% 0 5%;   
+}
+
+.make_a_donation img {
+    display: inline-block;
+}
+
+.in_addition {
+    display: inline-block;
+    width: 30%;
+    margin: 0 0 0 60px; 
+}
+
+.in_addition h2 {
+    margin-bottom: 20px;
+}
+
+.the_bank {
+    letter-spacing: 1px;
+}
+
+.card_number {
+    background-color: #f1cdb3;
+    border-radius: 5px;
+    text-align: center;
+    width: 315px;
+    height: 45px;
+    margin: 10px 0 25px 0;
+}
+
+.card_number span {
+    font-size: 20px;
+    font-family: "Times New Roman";
+    line-height: 45px;
+    letter-spacing: 1px;
+}
+
+.card_number span:before {
+    content: "";
+    display: inline-block;
+    background: url("../source/images/card.png") no-repeat;
+    width: 30px;
+    height: 35px;
+    margin: 10px 10px 0 0;
+    vertical-align: middle;
+}
+
+.in_addition p {
+    font-family: "Arial";
+    font-size: 12px;
+    color: #b2b2b2;
+    font-style: italic;
+}
+
+footer {
+    background: url("../source/images/Dog_contact.jpg") no-repeat center top;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+}
+
+footer h2 {
+    color: #fff;
+    padding: 25% 0 10%;
+}
+
+.footer-left {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    padding-left: 1%;
+}
+
+.footer-left a {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: #f1cdb3;
+    text-decoration: none;
+    letter-spacing: 1px;
+    padding-left: 20px;
+}
+
+.footer-left div {
+    padding: 3% 0;
+}
+
+.footer-left div:nth-child(2):before {
+    background: url("../source/images/envelope.png") no-repeat;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    vertical-align: middle;
+    
+}
+.footer-left div:nth-child(3):before{
+    background: url("../source/images/telephone.png") no-repeat;
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 32px;
+    vertical-align: middle;
+}
+
+.footer-right {
+    display: inline-block;
+    width: 24%;
+    vertical-align: top;
+    margin-left: 11%;
+}
+
+.footer-right div {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: #f1cdb3;
+}
+
+.footer-right div span {
+    padding-left: 40px;
+}
+
+.footer-right div:before{
+    background: url("../source/images/pin.png") no-repeat;
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 36px;
+    vertical-align: middle;  
+    padding-left: 20px;
+}
+
+/******************** media *************/
+
+@media (max-width: 1300px) {
+
+header {
+   background: url("../source/images/dog_logo_ small.jpg") no-repeat center;
+   width: 100%;
+   height: 626px;
+   background-size: cover;
+}
+
+.header-bottom {
+    padding: 6% 10px;
+}
+
+}
+
+@media (max-width: 1200px) {
+
+.help_our_shelter ul li {
+    margin: 30px 50px;
+}
+
+.our_friends h2 {
+    width: 40%;
+}
+
+}
+
+@media (max-width: 1130px) {
+
+.wrapper {
+    padding-bottom: 213px;
+}
+
+.help_our_shelter h2 {
+    width: 40%;
+}
+
+footer {
+    background: url("../source/images/Dog_contact_small.jpg") no-repeat center top;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 213px;
+}
+
+footer h2 {
+    padding: 8% 0;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.footer-right div, .footer-left a {
+    font-size: 18px;
+}
+
+}
+
+@media (max-width: 980px) {
+
+.header-bottom h1 {
+    font-size: 30px;
+    word-spacing: 9px;
+    line-height: 40px;
+} 
+
+h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.about_the_shelter img {
+    display: block;
+    margin: 0 auto;
+}
+
+.the_shelter {
+    width: 90%;
+}
+
+.make_a_donation img {
+    display: block;
+    margin: 0 auto;
+}
+
+.in_addition {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+footer h2 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+.footer-right {
+    margin-left: 5%;
+}
+
+.footer-left, .footer-right {
+    width: 28%;
+}
+
+}
+
