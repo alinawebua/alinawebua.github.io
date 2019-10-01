@@ -202,7 +202,8 @@ h2 {
 
 @media (max-width: 334px) {
 	h1 {
-			font-size: 2rem;
+		font-size: 2rem;
+		padding: 15px 5px;
 		}
 }
 
