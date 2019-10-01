@@ -49,6 +49,7 @@ table {
 
 /***********************************************************/
 
+
 * {
 	font-family: 'Arial', sans-serif;
 	font-size: 16px;
@@ -120,8 +121,7 @@ i {
 	color: #fff;
     width: 40px;
     height: 40px;
-    font-size: 24px;
-    line-height: 50px;
+    font-size: 22px;
     cursor: pointer;
 }
 
