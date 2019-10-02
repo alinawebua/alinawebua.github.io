@@ -526,6 +526,10 @@ footer[role='contentinfo'] {
 }
 
 @media (max-width: 550px) {
+	.header-info {
+		margin: 0 5%;
+	}
+
 	.header-info nav ul {
 		flex-wrap: wrap;
 		justify-content: center;
